@@ -3,9 +3,11 @@ package com.example.telegrambot.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.bytebuddy.asm.Advice;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,7 +24,7 @@ public class Driver {
 
 
 
-    private Timestamp timeToDrive;
+    private LocalTime timeToDrive;
 
 
 

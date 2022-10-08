@@ -46,8 +46,11 @@ public class CompanyController {
     public ResponseEntity<?> delete(@PathVariable Long id ){
         ApiResponse<?> apiResponse = companyService.deleteCompany(id);
         return ResponseEntity.status(apiResponse.isSuccess() ? 202 : 404).body(apiResponse);
-
     }
+
+
+
+
 
 
 }
