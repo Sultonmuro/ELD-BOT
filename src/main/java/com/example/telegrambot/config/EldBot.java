@@ -28,14 +28,21 @@ public class EldBot extends TelegramLongPollingBot {
     }
 
     @Override
-    public String getBotToken() {
-        return  config.getBotToken(); // ???????
-    }
+    public String getBotToken() { return  config.getBotToken();}
 
     @Override
     @SneakyThrows
     public void onUpdateReceived(Update update) {
-        ///
+        Message message = update.getMessage();
+         if( message.equals("/start")){
+          SendMessage sendMessage = new SendMessage();
+            sendMessage.setText("Hi" + message.getChat().getFirstName());
+            sendMessage.setChatId(message.getChatId());
+             ///
+         }
+
+
+
     }
     private void sendMessage(long chatId,String textToSend){
       SendMessage sendMessage = new SendMessage();

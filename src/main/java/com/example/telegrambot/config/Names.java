@@ -6,11 +6,4 @@ public class Names {
     String ON_DUTY = "ON_DUTY LIMIT ⚠";
     String DRIVE_STATUS = "⚠DRIVE LIMIT⚠ ";
     String SHIFT_LIMIT = "⚠SHIFT LIMIT⚠";
-
-
-
-
-
-
-
 }
