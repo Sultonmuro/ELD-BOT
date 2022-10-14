@@ -14,14 +14,13 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class BotInit {
   private final EldBot eldBot;
 
-  @EventListener({ContextRefreshedEvent.class})
+
     public void init() throws TelegramApiException{
       TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
     try{
         telegramBotsApi.registerBot(eldBot);
     }catch (TelegramApiException e){
         System.out.println(e);
-
     }
   }
 }

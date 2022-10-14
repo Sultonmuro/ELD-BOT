@@ -20,8 +20,6 @@ public class TelegrambotApplication {
 
 
     public static void main(String[] args) throws TelegramApiException {
-
-
+SpringApplication.run(TelegrambotApplication.class,args);
     }
-
 }
